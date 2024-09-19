@@ -1,0 +1,11 @@
+
+<div >
+    <div class="card mb-2 bg-dark text-center">
+        <div class="card-body text-white">
+            <p class="card-text">{{gif.title || 'Sin Titulo'}}</p>
+            <!-- <img [src]="gif.images.downsized_medium.url" [alt]="gif.title"> -->
+             <app-lazy-image [url]="gif.images.downsized_medium.url" [alt]="gif.title || 'Sin Titulo'"></app-lazy-image>
+            
+        </div>
+    </div>
+</div>
